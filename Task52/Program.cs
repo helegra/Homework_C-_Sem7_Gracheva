@@ -26,11 +26,11 @@ for (int i = 0; i < matrix.GetLength(0); i++)
     Console.WriteLine();
 }
 
-double[] array =new double[columns];
+double[] array = new double[columns];
 
 for (int j = 0; j < matrix.GetLength(1); j++)
 {
-    double sum=0;
+    double sum = 0;
     double average = 0;
 
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -38,11 +38,9 @@ for (int j = 0; j < matrix.GetLength(1); j++)
         sum += matrix[i, j];
     }
 
-    average = sum/matrix.GetLength(0);
+    average = sum / matrix.GetLength(0);
     average = Math.Round(average, 2);
     array[j] = average;
-    
 }
-          
-    Console.WriteLine($"Cреднее арифметическое элементов столбца:" + (string.Join( ", ", array)));
- 
+
+Console.WriteLine($"Cреднее арифметическое элементов столбца:" + (string.Join(", ", array)));
